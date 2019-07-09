@@ -2,7 +2,7 @@
     <div class="template">
         <div class="tit pl-2 mt-3 text-right pr-3"><span class="icon-shuju1 iconfont mr-1"></span>最新入库数据</div>
         <div class="con mt-2 py-2 px-4" >
-            <table class="table text-center" :style="{lineHeight:16.6/(list.length+1)+'rem'}">
+            <table class="table text-center" :style="{lineHeight:16.5/(list.length+1)+'rem'}">
                 <tr>
                     <th colspan="3">最新入库数据</th>
                 </tr>
