@@ -1,5 +1,5 @@
 <template>
-    <div class="jcsjk">
+    <div class="app">
         <header class="text-center">基础数据库</header>
         <section class="container-fluid">
             <div class="row">
@@ -68,7 +68,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../styles/mixin.scss';
-.jcsjk{
+.app{
     @include bis('../../images/jcsjk_bj.png');
     height: 100%;
     .col-l,.col-r{

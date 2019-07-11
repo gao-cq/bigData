@@ -2,7 +2,12 @@
     <div class="template">
         <div class="tit pl-2 mt-3"><span class="icon-shuju iconfont mr-1"></span>全部数据量</div>
         <div class="con mt-2" id="map">
-            
+            <div class="row pt-3 px-5">
+                <div class="col px-0 text-center" v-for="(item,index) of rknum" :key="index">
+                    <span>{{item.name}}</span>
+                    <div class="huan mt-2">{{item.value}}</div>   
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -16,11 +21,32 @@ import { qbsjlData } from '../../../services/getDate.js'
 export default {
     data(){
         return {
-
+            rknum:[
+                {
+                    name:'人口',
+                    value:'500万'
+                },
+                {
+                    name:'法人',
+                    value:'100万'
+                },
+                {
+                    name:'空间地理',
+                    value:'25万'
+                },
+                {
+                    name:'宏观经济',
+                    value:'200万'
+                },
+                {
+                    name:'证照',
+                    value:'200万'
+                }
+            ]
         }
     },
     mounted(){
-        this.init()
+        // this.init()
     },
     methods:{
         init(){
@@ -67,6 +93,18 @@ export default {
             font-size: 1.3rem;
             vertical-align: -5%;
         }
+    }
+    .huan{
+        @include bis('../../../images/zhcs_h.png');
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        margin: 0 auto;
+        color:#80ff00;
+    }
+    span{
+        color:#01c3ff;
+        font-size: 0.9rem;
     }
     #map{
         height: 9rem;

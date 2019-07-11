@@ -41,12 +41,18 @@ export const sjj_option={
         trigger: 'item',
         formatter: "{a} <br/>{b}: {c} ({d}%)"
     },
+    label:{
+        formatter: (e)=>{
+            return `${Math.round(e.percent)}% ${e.name}`
+        }
+    },
     color:['#427ffd','#e05d68','#ccce32','#18ccff','#a682e4','#f19861','#00cbcc'],
     series: [
         {
             name:'数据集',
             type:'pie',
-            radius: ['20%', '50%'],
+            roseType: 'radius',
+            radius: ['0%', '60%'],
             center:['50%','50%'],
             avoidLabelOverlap: false,
             label: {
@@ -667,7 +673,7 @@ export const dq_option = {
 
         light: {
             ambient: {
-                intensity: 0.5
+                intensity: 0.3
             },
             main: {
                 intensity: 1,

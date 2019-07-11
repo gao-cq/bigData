@@ -23,3 +23,8 @@ export const sjjData = ()=>fetch('/sjj',{
 export const rksjlData = ()=>fetch('/rksjl',{
 
 })
+
+//人口数
+export const rkData = () => fetch('/rk', {
+
+})

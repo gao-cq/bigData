@@ -13,7 +13,7 @@ module.exports={
         // index2: path.resolve(__dirname,'./src/index2.js'),
     },
     output: {
-        filename: "[name].js",
+        filename: "js/[name].js",
         path: path.join(__dirname,"dist")
     },
     resolve: {
@@ -63,7 +63,7 @@ module.exports={
                         loader: 'url-loader',
                         options: {
                             limit:10240,
-                            name: 'has-images/[name]-[hash:5].[ext]'
+                            name: 'images/[name]-[hash:5].[ext]'
                         }
                     }
                 ]
@@ -104,8 +104,8 @@ module.exports={
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
-            filename: 'styles/[name].css',
-            chunkFilename: 'styles/[name].css',
+            filename: 'css/[name].css',
+            chunkFilename: 'css/[name].css',
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',

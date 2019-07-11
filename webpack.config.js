@@ -6,7 +6,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports={
     entry: ['babel-polyfill',path.resolve(__dirname,'./src/main.js')],
     output: {
-        filename: "bundle[hash:5].js",
+        filename: "js/bundle[hash:5].js",
         path: path.join(__dirname,"dist")
     },
     resolve: {
@@ -50,7 +50,7 @@ module.exports={
                         loader: 'url-loader',
                         options: {
                             limit:10240,
-                            name: 'has-images/[name]-[hash:5].[ext]'
+                            name: 'images/[name]-[hash:5].[ext]'
                         }
                     }
                 ]

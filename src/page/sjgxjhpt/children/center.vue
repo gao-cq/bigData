@@ -87,8 +87,8 @@ export default {
 .template{
     height: 43rem; 
     .dt{
-        height: 34rem;
-        padding-top: 1rem;
+        height: 35rem;
+        padding-top: 0.8rem;
         header{
             height: 4rem;
             @include bis('../../../images/sjgxjhpt_ct.png');
@@ -96,6 +96,7 @@ export default {
                 color:#f1e40d;
                 line-height: 2;
                 margin-bottom: 0;
+                margin-top: 0.2rem;
                 font-size: 0.9rem;
             }
             span{
@@ -103,12 +104,11 @@ export default {
             }
         }
         #dt{
-            height: 30rem;
+            height: 30.2rem;
         }
     }
     .cb{
         height: 8rem;
-        margin-top: 1rem;
         @include bis('../../../images/sjgxjhpt_cb.png');
         color:#24ecfe;
         font-size: 0.8rem;

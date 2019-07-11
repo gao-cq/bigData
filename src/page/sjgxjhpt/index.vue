@@ -1,5 +1,5 @@
 <template>
-    <div class="tempalte">
+    <div class="app">
         <header class="text-center">数据共享交换平台</header>
         <section class="container-fluid">
             <div class="row">
@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../styles/mixin.scss';
-.tempalte{
+.app{
     height: 100%;
     @include bis('../../images/sjgxjhpt.jpg');
     header{
