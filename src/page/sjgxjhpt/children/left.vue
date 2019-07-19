@@ -9,7 +9,10 @@
 <script>
 import echarts from 'echarts';
 import { resize } from '../../../config/rem';
-import { gxsj_option as option, sjjhfx_option as option2 } from '../../../config/echarts_api'
+import { 
+    gxsj_option as option,
+    sjjhfx_option as option2 
+} from '../config/echarts_api'
 export default {
     data(){
         return {

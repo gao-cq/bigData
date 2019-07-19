@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-4 px-1 my-1" v-for="(items,index) in zhzw" :key="index">
                         <div class="con py-2">
-                            <span v-for="(item,index) of items.value.toString()" :key="index">{{item}}</span>万
+                            <span v-for="(item,index) of items.value.toString()" :key="index">{{item}}</span>项
                             <div class="mt-1">{{items.name}}</div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                 <div class="row justify-content-center">
                     <div class="col-4 px-1 my-1" v-for="(items,index) in dqzhsq" :key="index">
                         <div class="con py-2">
-                            <span v-for="(item,index) of items.value.toString()" :key="index">{{item}}</span>万
+                            <span v-for="(item,index) of items.value.toString()" :key="index">{{item}}</span>{{["个","站","人","人","室"][index]}}
                             <div class="mt-1">{{items.name}}</div>
                         </div>
                     </div>

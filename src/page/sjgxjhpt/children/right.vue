@@ -9,7 +9,11 @@
 <script>
 import echarts from 'echarts';
 import { resize } from '../../../config/rem.js'
-import {jcfl_option as option0, jhsjl_option as option, gxsjl_option as option2} from '../../../config/echarts_api.js'
+import {
+    jcfl_option as option0, 
+    jhsjl_option as option, 
+    gxsjl_option as option2
+} from '../config/echarts_api.js'
 import { rksjlData } from '../../../services/getDate.js'
 export default {
     data(){

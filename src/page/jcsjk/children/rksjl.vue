@@ -1,6 +1,6 @@
 <template>
     <div class="template">
-        <div class="tit pl-2 mt-3"><span class="icon-shuju iconfont mr-1"></span>入库数据量 ( 12个月 )</div>
+        <div class="tit pl-2 mt-3"><span class="icon-shuju4 iconfont mr-1"></span>入库数据量 ( 12个月 )</div>
         <div class="con mt-2" id="rksjl">
             
         </div>

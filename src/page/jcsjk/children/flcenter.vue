@@ -1,6 +1,6 @@
 <template>
-    <div class="app">
-        <div class="tit pl-2 mt-3"><span class="icon-shuju1 iconfont mr-1"></span>数据总量</div>
+    <div class="template">
+        <div class="tit pl-2 mt-3"><span class="icon-shuju3 iconfont mr-1"></span>数据总量</div>
         <div class="con mt-2 py-2 px-4 container-fluid">
             <div class="row">
                 <div class="col-2 menu pr-0" :style="{paddingTop:15.6/(curlist.length+1)+'rem'}">
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import { setInterval } from 'timers';
 export default {
     data(){
         return {
@@ -188,14 +189,17 @@ export default {
         curlist:function(){
             return this.lists[this.curindex].data
         }
-    }
+    },
+    // created(){
+    //     setInterval(()=>{this.curindex++;if(this.curindex>4)this.curindex=0},3000)
+    // }
 }
 </script>
 
 
 <style lang="scss" scoped>
 @import '../../../styles/mixin.scss';
-.app{
+.template{
     .tit{
         line-height: 1.3;
         @include gradients(#0d588a, transparent);

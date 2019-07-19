@@ -23,23 +23,23 @@ export default {
         return {
             rknum:[
                 {
-                    name:'人口',
+                    name:'人口库',
                     value:'500万'
                 },
                 {
-                    name:'法人',
+                    name:'法人库',
                     value:'100万'
                 },
                 {
-                    name:'空间地理',
+                    name:'空间地理库',
                     value:'25万'
                 },
                 {
-                    name:'宏观经济',
+                    name:'宏观经济库',
                     value:'200万'
                 },
                 {
-                    name:'证照',
+                    name:'证照库',
                     value:'200万'
                 }
             ]
@@ -91,6 +91,7 @@ export default {
         @include gradients(#0d588a, transparent);
         .iconfont{
             font-size: 1.3rem;
+            color:#fff;
             vertical-align: -5%;
         }
     }

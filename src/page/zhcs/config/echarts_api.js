@@ -43,10 +43,10 @@ export const rk_option = {
 };
 
 
-//人口分类
+//智慧医疗
 export const rkfl_option={
     title:{
-        text: '人口分类',
+        text: '智慧医疗',
         textStyle: {
             color: '#01c3ff',
             fontSize: 16,
@@ -223,15 +223,19 @@ export const qyzb_option={
             radius: '55%',
             color: ["#03a9f5", "#e3ba24"],
             label: {
-               show:false 
+            //    show:false 
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b} :<br/> {c} ({d}%)"
             },
             data: [{
                     value: 10,
-                    name: "就业人口"
+                    name: "规上企业"
                 },
                 {
                     value: 5,
-                    name: "未就业人口"
+                    name: "其它企业"
                 }
             ]
         },
@@ -241,15 +245,16 @@ export const qyzb_option={
             radius: '55%',
             color: ["#03a9f5", "#e3ba24"],
             label: {
-                show: false
+                // show: false
+                
             },
             data: [{
                     value: 10,
-                    name: "就业人口"
+                    name: "小微企业"
                 },
                 {
                     value: 5,
-                    name: "未就业人口"
+                    name: "非小微企业"
                 }
             ]
         }
